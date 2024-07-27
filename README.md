@@ -1,4 +1,4 @@
-# Adile Akkılıç'ın Assembly Projeleri
+# Assembly Projeleri
 
 Bu depo, çeşitli işlevleri gösteren ve assembly programlamada farklı teknikleri uygulayan bazı assembly dilinde yazılmış programları içermektedir. Aşağıda her programın açıklaması bulunmaktadır:
 
