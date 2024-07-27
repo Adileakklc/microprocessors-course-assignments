@@ -57,7 +57,7 @@ PrintArray:
     mov ah, 2 ; DOS print karakter servisi
 PrintLoop:
     mov dl, [si] ; [si] adresindeki karakteri dl'ye yukle
-    int 21h ; karakteri yazdýir
+    int 21h ; karakteri yazdÄ±ir
     inc si ; bir sonraki karaktere gec
     loop PrintLoop ; cx register'indaki degeri azalt ve donguyu tekrarla
 
