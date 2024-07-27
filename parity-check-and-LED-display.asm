@@ -20,7 +20,7 @@ READ_INPUT:
     CMP AL, 1
     JB INVALID_INPUT  ;carry flag 1 ise komut calisir
     CMP AL, 10
-    JA INVALID_INPUT  ;eðer carry ve zeroflag 0 ise komut calisir
+    JA INVALID_INPUT  ;eÃ°er carry ve zeroflag 0 ise komut calisir
 
     ; Giris degerine gore ilgili sayinin parite durumunu kontrol et
     MOV BX, WORD PTR [DWORDS + SI + 2 * AL - 2]
