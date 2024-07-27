@@ -79,6 +79,3 @@ Bu program, bellekte saklanan iki sayıyı çarpar ve sonuçları bir çıkış 
 
 ## Programları Çalıştırma
 Bu programları çalıştırmak için Emu8086 gibi bir emulator gereklidir. 
-
-## İletişim
-Herhangi bir soru veya daha fazla bilgi için Adile Akkılıç ile iletişime geçebilirsiniz.
