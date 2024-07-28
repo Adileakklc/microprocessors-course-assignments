@@ -1,6 +1,4 @@
 ORG 100h
-;21360859052
-;Adile Akkilic
 ; Giris ve cikis portlari icin sabitleri tanimla
 INPUT_PORT   equ 0A0h  ; Sisteminize gore bu adresi ayarlayin
 OUTPUT_PORT  equ 0378h  ; Sisteminize gore bu adresi ayarlayin (LPT1 portu)
@@ -88,7 +86,7 @@ display_middle_high_bits:
     ; Sonucun orta 16 bitinin (yuksek kismi) LED_Display'de goruntulenmesi
     ; (Orta 16 bitin [0134h] adresinde depolanmis oldugu varsayilmistir)
     MOV AX, [0134h]
-    MOV DX, OUTPUT_PORT  ; Port adresini yüklemek için DX register'ýný kullan
+    MOV DX, OUTPUT_PORT  ; Port adresini yÃ¼klemek iÃ§in DX register'Ä±nÄ± kullan
     OUT DX, AL
     JMP main_loop
 
@@ -106,15 +104,15 @@ devam:
     RCR DX, 1        ; carpim sonucunun 16-0  bitini bir saga kaydir
     MOV [0130h], DL    
     MOV AX, [0122h]
-    SHR AX, 1        ; carpan'i bir bit saða kaydir
+    SHR AX, 1        ; carpan'i bir bit saÄŸa kaydir
     MOV [0122h], AL 
     MOV BX, [0120h]
-    RCR BX, 1        ; carpan'i bir bit saða kaydir, ancak carry ile birlikte gelirse yani carpanin 32-16 bitinden gelen eldeyi de kullanarak
+    RCR BX, 1        ; carpan'i bir bit saga kaydir, ancak carry ile birlikte gelirse yani carpanin 32-16 bitinden gelen eldeyi de kullanarak
     MOV [0120h], BL 
           
     DEC SI      ; Dongu degiskenini azalt
     CMP SI, 0   ; Degisken 0 mi diye bak    
-    JNZ topla_kaydir ; Sifir deðilse kontrolcuye git
+    JNZ topla_kaydir ; Sifir deÄŸilse kontrolcuye git
     JMP son     ; Uygulamayi bitirmeye git 
 
 topla_kaydir:
