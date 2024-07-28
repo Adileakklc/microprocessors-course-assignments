@@ -7,7 +7,7 @@ mov bx, 0ffffh              ;BX register'ini 0xFFFF olarak baslat
 
 next:
     inc bx
-    cmp bx, 65h             ;BX'i 0x65 ile karþýlaþtýr
+    cmp bx, 65h             ;BX'i 0x65 ile karÅŸÄ±laÅŸtÄ±r
     jz finish               ;BX 0x65'e esitse finish etiketine atla
     
     mov dl, 0h              ;DL register'ini 0 olarak baslat
@@ -29,7 +29,7 @@ calculate:
 print:
     dec dl                  ;DL'i bir azalt
     mov es:[200h+si],dl     ;DL degerini [ES:200h + SI] adresine yaz
-    inc si                  ; SI'ý bir artýr
+    inc si                  ; SI'Ä± bir artÄ±r
     jmp next
 
 finish:
